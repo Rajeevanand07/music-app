@@ -39,13 +39,13 @@ const ControlCenter = () => {
   return(
     <View style={styles.container}>
       <Pressable onPress={skipToPrevious}>
-        <Icon name="skip-previous" size={40} color="#000" />
+        <Icon name="skip-previous" size={40} color="#ffffff" />
       </Pressable>
       <Pressable onPress={() => togglePlayBack(playBackState)}>
-        <Icon name={playBackState?.state === State.Playing ? 'pause' : 'play-arrow'} size={40} color="#000" />
+        <Icon name={playBackState?.state === State.Playing ? 'pause' : 'play-arrow'} size={75} color="#ffffff" />
       </Pressable>
       <Pressable onPress={skipToNext}>
-        <Icon name="skip-next" size={40} color="#000" />
+        <Icon name="skip-next" size={40} color="#ffffff" />
       </Pressable>
     </View>
   );
